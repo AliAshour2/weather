@@ -1,0 +1,290 @@
+/* GENERAL STYLING */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: #bfc1c8;
+    font-family: Roboto, "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b !important;
+}
+
+ul{
+    list-style: none;
+}
+
+/* END GENERAL STYLING  */
+
+
+
+/* NAVBAR */
+
+nav{
+    
+}
+
+
+nav .navbar-brand img{
+    width: 64px;
+    height: 38px;
+}
+
+.navbar-nav .nav-link.active{
+    color: #009ad8 !important;
+}
+
+nav .navbar-nav .nav-item a {
+    color: #fff;
+    font-weight: 400;
+    padding: 20px;
+    
+    
+  }
+
+
+.active{
+    color: #009ad8;
+    border-color: #009ad8; 
+    
+}
+nav  .navbar-nav  .nav-item > a:hover,
+nav  .navbar-nav  .nav-item > a:focus{
+    color: #009ad8;
+    border-color: #009ad8;
+}
+
+.nav-item.active,
+.nav-item.active a {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #009ad8;
+}
+
+
+
+
+
+
+/* END NAVBAR */
+
+
+
+
+/* START HERO */
+.hero{
+    background-image: url(/assets/images/images2.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 350px;
+    padding: 70px 0px;
+  
+}
+.find-location {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+
+.find-location input[type="text"]{
+    width: 100%;
+    color: white;
+    padding: 20px 20px 20px 20px;
+    background: #1e202b;
+    border-radius: 30px;
+}
+
+
+
+.find-location input[type="submit"],
+ .find-location input[type="button"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0px 40px;
+    background: #009ad8;
+    color: #fff;
+    border-radius: 30px;
+}
+.find-location input[type="text"],
+.find-location input[type="button"],
+.find-location input[type="text"]:focus,
+    .find-location input[type="text"]:hover,
+    .find-location input[type="text"]:active,
+    .find-location input[type="button"]:focus,
+    .find-location input[type="button"]:hover,
+    .find-location input[type="button"]:active {
+        outline: none;
+        border: none;
+    }
+/* END HERO */
+
+/* START weather table*/
+.weather-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    width: 100%;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    background: #323544;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: -150px !important;
+    margin-bottom: 50px;
+}
+
+ .head{
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+    background:#2d303d;
+    color: #bfc1c8;
+}
+
+.weather-container .city{
+    color: #bfc1c8;
+}
+
+.weather-container .degree{
+    color: #fff;
+}
+
+.weather_info li span{
+    color: #bfc1c8;
+}
+
+
+.weather-container .card{
+    border: none;
+}
+.weather-container .card .head .day{
+
+
+}
+
+small{
+    font-size: 1.1428571429em;
+    color: #bfc1c8;
+}
+
+.weather-container .card .today-info{
+    padding: 30px 20px;
+    text-align: left;
+    background:#323544;
+}
+
+.weather-container .card .today-info .city{
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+.middle-head{
+    background: #222530;
+}
+
+.middle-body{
+    background: #262936;
+}
+
+.weather-container .card .today-info .degree{
+    font-size: 6.42857rem;
+}
+
+.weather-container .card .today-info .status{
+    margin: 20px 0;
+}
+
+.status{
+    color: #009ad8;
+}
+
+.weather_info{
+    padding: 0;
+}
+.weather_info li{
+    margin-right: 20px;
+}
+.weather_info li img{
+    margin-right: 10px;
+    width: 21px;
+}
+
+/* END weather contianer */
+
+
+
+
+/* Next day card */
+
+
+.forcast_info{
+    padding: 50px 20px 10px;
+}
+
+.forcast_info .next_max_temp{
+    font-size: 1.7142857143em;
+    font-weight: 700;
+    color: #fff;
+}
+.forcast_info img{
+    width: 48px;
+    margin-bottom: 20px;
+}
+
+.forcast_info .next_condition{
+    padding: 20px 0;
+    color: #009ad8;
+}
+
+
+/* Next day card */
+
+
+/* Start footer */
+footer{
+    background: #222530;
+    padding: 50px;
+}
+
+
+.error {
+    border: 1px solid red;
+  }
+
+.col-md-offset-1{
+    margin-left: 8.333333%;
+
+}
+
+footer .social-links{
+    padding: 0 15px;
+}
+
+footer .social-links a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 1.8;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-size: 20px;
+    font-size: 1.4285714286em;
+}
+footer .social-links a:hover{
+    background: #009ad8;
+    color: #fff;
+}
+/* End footer */

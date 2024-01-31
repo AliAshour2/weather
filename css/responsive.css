@@ -1,0 +1,76 @@
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .navbar {
+    background: #262936 !important;
+  }
+
+  nav .navbar-nav .nav-item a {
+    color: #fff;
+    font-weight: 400;
+    padding: 20px;
+    border-bottom: 0.8px solid #bfc1c8;
+    transition: all 0.3s ease 0s;
+  }
+  .navbar-nav .nav-item:last-child a {
+    border-bottom: none;
+  }
+  .navbar .menu-icon {
+    color: #fff !important;
+  }
+
+  .navbar-nav {
+    margin-block: 10px;
+    background: #2d303d;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .navbar-collapse li a {
+    text-align: center;
+  }
+
+  nav .navbar-nav .nav-item > a:hover,
+  nav .navbar-nav .nav-item > a:focus {
+    border: none;
+    border-bottom: 2px dotted #ffffff;
+  }
+
+  .navbar .navbar-toggler:focus,
+  .navbar .navbar-toggler:active,
+  .navbar .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #fff !important;
+  }
+
+  .navbar.navbar-expand-lg .navbar-toggler:hover {
+    border-color: #009ad8;
+    color: #009ad8;
+  }
+
+  .navbar .navbar-toggler {
+    padding: 10px;
+    border-radius: 40px;
+    border: 2px solid #009ad8;
+  }
+
+  .navbar .navbar-toggler .bar-icon {
+    color: #009ad8 !important;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

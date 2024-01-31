@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="shortcut icon" href="assets/images/images1.png" type="image/x-icon">
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    <!-- CSS -->
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap -->
+
+    <!-- Fontawesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fontawesome -->
+
+    <!-- Responsive -->
+        <link rel="stylesheet" href="css/responsive.css">
+    <!-- Responsive -->
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- AOS -->
+
+
+</head>
+
+    
+    <main>
+        <!-- START NAVBAR -->
+        <nav class="navbar navbar-expand-lg  py-2">
+            <div class="container">
+              <a class="navbar-brand" data-aos="fade-right" href="#"><img src="assets/images/images1.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars menu-icon"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#news">News</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#liveCameras">Live Cameras</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#photos">Photos</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+        <!-- END NAVBAR -->
+
+
+
+        <!-- START HEADER -->
+        <section class="hero" id="home">
+            <div class="container">
+              <form class="find-location first-input">
+                <input type="text" placeholder="Find your location..." id="search">
+                <input type="button" data-aos="fade-right" value="Find" id="submit">
+              </form>
+              
+             
+            </div>
+        </section>
+
+        <div class="weather-table">
+          <div class="container ">
+            
+
+            <div class=" row g-0 w-100 weather-container">
+              <!-- Start today card -->
+              <div  class="today card  col-md-4 col-sm-12"  data-aos="fade-right" >
+                <div class="head d-flex justify-content-between">
+                  <div id="dayName" class="day">
+                    
+                  </div>
+                  <div id=""  class="date">
+                    <span id="dayNum"></span>
+                    <span id="monthName"></span>
+                  </div>
+                </div>
+                <div class="today-info">
+                  <div id="city" class="city">
+                      
+                  </div>
+                  <div class="d-flex flex-column justify-content-between">
+                    <div id="temp" class="degree ">
+                      
+                    </div>
+                    <div id="icon" class="icon ">
+                        <img id="icon-img" src="" alt="icon">
+                    </div>
+                  </div>
+
+                  <div id="condition" class="status">
+                      
+                  </div>
+                  <ul class="weather_info d-flex ">
+                    <li><img src="assets/images/images1 (1).png" alt=""><span id="cloud"></span></li>
+                    <li><img src="assets/images/images2 (1).png" alt=""><span id="wind"></span></li>
+                    <li><img src="assets/images/images3.png" alt=""><span id="wind_dir"></span></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End today card -->
+
+
+
+              <!-- Start next day -->
+              <div class="next_day cart middle-body col-md-4 col-sm-12  " data-aos="fade-right"  data-aos-delay="300">
+                <div class="head middle-head text-center">
+                  <div id="nextDayName" class="day">
+                    sunday
+                  </div>
+                  
+                </div>
+                <div class="forcast_info middle-body d-flex flex-column text-center">
+                  <img src="" alt="" class="next_day_icon mx-auto">
+                  <div class="next_max_temp"></div>
+                  <small class="next_min_temp"></small>
+                  <div class="next_condition"></div>
+                  
+                </div>
+              </div>
+              <!-- End next day -->
+
+
+
+              <!-- Start next day -->
+              <div class="next_day cart col-md-4 col-sm-12 " data-aos="fade-right"  data-aos-delay="400">
+                <div class="head text-center">
+                  <div id="nextDayName" class="day">
+                    sunday
+                  </div>
+                  
+                </div>
+                <div class="forcast_info d-flex flex-column text-center">
+                  <img id="fakeimg" src="" alt="" class="next_day_icon mx-auto">
+                  <div class="next_max_temp" id="next_max_temp">11 <sup> O</sup>C</div>
+                  <small class="next_min_temp" id="next_min_temp">10</small>
+                  <div class="next_condition" id="next_condition">wind</div>
+                  
+                </div>
+              </div>
+              <!-- End next day -->
+            </div>
+                
+              
+              
+           
+          </div>
+        </div>
+
+        
+
+        <!-- END  HEADER -->
+    </main>
+
+    <!-- Stat foorer -->
+    <footer class="footer" id="#contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form class="find-location mail-to">
+              <input type="text" placeholder="Enter your email..." id="mail">
+              <input type="button" value="subscribe" id="submit">
+            </form>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        <p class="text-white">Copyright 2023 Company name. Designed by Hamo. All rights reserved</p>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
