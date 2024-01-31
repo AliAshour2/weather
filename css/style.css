@@ -80,7 +80,7 @@ nav  .navbar-nav  .nav-item > a:focus{
 
 /* START HERO */
 .hero{
-    background-image: url(assets\images\images2.png);
+    background-image: url(/assets/images/images2.png);
     background-size: cover;
     width: 100%;
     min-height: 350px;

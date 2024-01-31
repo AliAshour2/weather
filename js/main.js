@@ -1,5 +1,5 @@
 const apiKey = "ba823726217941c8bb8234701242701";
-const baseUrl = `http://api.weatherapi.com/v1`;
+const baseUrl = `https://api.weatherapi.com/v1`;
 
 let searchInput = document.getElementById("search");
 let dayName = document.getElementById("dayName");
