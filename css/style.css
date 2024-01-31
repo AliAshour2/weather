@@ -80,7 +80,7 @@ nav  .navbar-nav  .nav-item > a:focus{
 
 /* START HERO */
 .hero{
-    background-image: url("assets/images/images2.png");
+    background-image: url("https://github.com/AliAshour2/weather/blob/5a27f6a850eb43554f73a8c9348a27e1d77e93e3/assets/images/images2.png");
     background-size: cover;
     width: 100%;
     min-height: 350px;
